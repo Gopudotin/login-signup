@@ -4,7 +4,6 @@
     margin: auto;
     background: #fff;
     width: 600px;
-    /*margin-bottom: 0; */
     min-height: 100vh;
     border-radius: 5px;
     justify-content: center;
@@ -15,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 9px;
+    gap: 15px;
     width: 100%;
     margin-top: 30px;
 }
@@ -28,13 +27,13 @@
 
 .underline {
     width: 61px;
-    height: 6px;
+    /*height: 6px;*/
     background-color: #3c009d;
     border-radius: 9px;
 }
 
 .inputs {
-    margin-top: 55px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -44,25 +43,26 @@
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
-    height: 60px;
+    width: 350px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
     background-color: #eaeaea;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 15px; /* Add vertical gap between input fields */
 }
 
-.input img {
-    margin: 0px 30px;
-}
-
 .input input {
-    height: 50px;
-    width: 400px;
+    height: 100%;
+    width: 80%; /* Adjust the width as needed */
     background: transparent;
     color: #797979;
-    font-size: 19px;
+    font-size: 16px; 
     border: none;
     outline: none;
+}
+
+.input img {
+    margin: 0px 10px; 
+    width: 15px; 
 }
 
 .forgot-container span {
@@ -111,7 +111,8 @@ button {
     font-size: 14px;
     margin-top: 5px;
 }
+
 .link {
     color: #4c00b4;
     cursor: pointer;
-  }
+}

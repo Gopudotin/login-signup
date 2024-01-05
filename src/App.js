@@ -1,10 +1,17 @@
-import React from 'react';
-import LoginSignup from './Components/LoginSignup/LoginSignup';
+// App.js
 
-function App() {
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import LoginSignup from './Components/LoginSignup/LoginSignup';
+import Dashboard from './Components/Dashboard/Dashboard'; // Update the path accordingly
+
+const App = () => {
   return (
     <div>
-      <LoginSignup />
+      <Routes>
+        <Route path="/" element={<LoginSignup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 }
